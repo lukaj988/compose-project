@@ -44,4 +44,4 @@ jobs:
 
       - name: Push image
         run: |
-          docker push lukaj988/luka-nginx-latest
+          docker push lukaj988/luka-nginx:latest
