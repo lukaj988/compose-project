@@ -1,0 +1,10 @@
+services:
+  web:
+    build: .
+    container_name: luka-compose-web
+    ports:
+      - "8088:80"
+  helper:
+    image: alpine
+    container_name: helper
+    command: tail -f /dev/null
