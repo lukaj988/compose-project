@@ -24,3 +24,9 @@ jobs:
       - name: Validate Docker Compose
         run: |
           docker compose config
+
+      - name: Deploy simulation
+        run: |
+          chmod +x scripts/deploy.sh
+          ./scripts/deploy.sh
+
